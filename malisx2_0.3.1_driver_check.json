@@ -1,0 +1,4143 @@
+{
+  "schema": 1,
+  "generated_utc": "20261031T103604Z",
+  "app": {
+    "package": "com.faux.vktest",
+    "version": "1.8",
+    "commit": "9d468a3f4a9d",
+    "checks": 66,
+    "harness": 2
+  },
+  "device": {
+    "manufacturer": "Xiaomi",
+    "model": "2409BRN2CA",
+    "soc": "MT6769",
+    "soc_maker": "Mediatek",
+    "android": "15",
+    "sdk": 35,
+    "build": "Redmi\/pond_global\/pond:15\/AP3A.240905.015.A2\/OS2.0.203.0.VGTMIXM:user\/release-keys",
+    "cpu": {
+      "cores": 8,
+      "abi": "arm64-v8a",
+      "hardware": "mt6768",
+      "clusters": [
+        {
+          "cores": 6,
+          "max_khz": 1700000
+        },
+        {
+          "cores": 2,
+          "max_khz": 2000000
+        }
+      ]
+    },
+    "ram_mb": 7665
+  },
+  "driver": {
+    "device_name": "Mali-G52",
+    "vendor_id": 5045,
+    "device_id": 1946292224,
+    "api_version": "1.1.366",
+    "driver_version": 184553472,
+    "instance_version": "1.3.0",
+    "driver_id": 9,
+    "name": "Mali-G52",
+    "info": "v1.r44p1-malisx2.0.3.1.s972b4c880b46",
+    "conformance_version": "0.0.0.0",
+    "driver_uuid": "2a5b688beff41a49550a35151742b82a",
+    "device_uuid": "00100274010000000000000000000000",
+    "pipeline_cache_uuid": "f62242e06f7b2e6a9427950ac231ca61",
+    "kind": "custom",
+    "selection": "malisx2-0.3.1-8cdb0f68cd",
+    "loaded_via": "adrenotools",
+    "library_sha256": "4227225277ce5cfdc8c480eb3175e7e993e433f9fdbaa05467f12f0eced6d658"
+  },
+  "extensions": [
+    "VK_KHR_incremental_present",
+    "VK_GOOGLE_display_timing",
+    "VK_EXT_swapchain_maintenance1",
+    "VK_KHR_create_renderpass2",
+    "VK_KHR_depth_stencil_resolve",
+    "VK_KHR_driver_properties",
+    "VK_KHR_dynamic_rendering",
+    "VK_KHR_external_fence_fd",
+    "VK_KHR_external_semaphore_fd",
+    "VK_KHR_line_rasterization",
+    "VK_KHR_push_descriptor",
+    "VK_KHR_timeline_semaphore",
+    "VK_EXT_device_fault",
+    "VK_EXT_line_rasterization",
+    "VK_EXT_memory_budget",
+    "VK_EXT_provoking_vertex",
+    "VK_EXT_rasterization_order_attachment_access",
+    "VK_KHR_swapchain",
+    "VK_ARM_rasterization_order_attachment_access"
+  ],
+  "features": {
+    "VkPhysicalDeviceFeatures": {
+      "core_version": "1.0",
+      "bits": {
+        "robustBufferAccess": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "fullDrawIndexUint32": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "imageCubeArray": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "independentBlend": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "geometryShader": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "stage.geometry_point_to_quad",
+              "advertised": false,
+              "extension_listed": true,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "geometryShader"
+            }
+          ]
+        },
+        "tessellationShader": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "stage.tessellation_mirror",
+              "advertised": false,
+              "extension_listed": true,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "tessellationShader"
+            }
+          ]
+        },
+        "sampleRateShading": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "dualSrcBlend": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "logicOp": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "multiDrawIndirect": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "core.multi_draw_indirect_instances",
+              "advertised": false,
+              "extension_listed": true,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "multiDrawIndirect"
+            }
+          ]
+        },
+        "drawIndirectFirstInstance": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "core.indirect_first_instance",
+              "advertised": false,
+              "extension_listed": true,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "drawIndirectFirstInstance"
+            }
+          ]
+        },
+        "depthClamp": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "depthBiasClamp": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "fillModeNonSolid": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "depthBounds": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "wideLines": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "largePoints": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "alphaToOne": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "multiViewport": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "limit.viewports",
+              "advertised": false,
+              "extension_listed": true,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "multiViewport"
+            }
+          ]
+        },
+        "samplerAnisotropy": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "textureCompressionETC2": {
+          "advertised": true,
+          "verdict": "pass",
+          "checks": [
+            {
+              "id": "claim.texture_compression_etc2",
+              "advertised": true,
+              "extension_listed": true,
+              "evidence": [
+                {
+                  "what": "ETC2_R8G8B8_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ETC2_R8G8B8_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ETC2_R8G8B8A1_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ETC2_R8G8B8A1_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ETC2_R8G8B8A8_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ETC2_R8G8B8A8_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "EAC_R11_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "EAC_R11_SNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "EAC_R11G11_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "EAC_R11G11_SNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                }
+              ],
+              "verdict": "pass",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "textureCompressionETC2"
+            }
+          ]
+        },
+        "textureCompressionASTC_LDR": {
+          "advertised": true,
+          "verdict": "pass",
+          "checks": [
+            {
+              "id": "claim.texture_compression_astc_ldr",
+              "advertised": true,
+              "extension_listed": true,
+              "evidence": [
+                {
+                  "what": "ASTC_4x4_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_4x4_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_5x4_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_5x4_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_5x5_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_5x5_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_6x5_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_6x5_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_6x6_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_6x6_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_8x5_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_8x5_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_8x6_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_8x6_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_8x8_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_8x8_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_10x5_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_10x5_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_10x6_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_10x6_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_10x8_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_10x8_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_10x10_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_10x10_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_12x10_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_12x10_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_12x12_UNORM_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "ASTC_12x12_SRGB_BLOCK: sampled, blit source, linear filter in optimalTilingFeatures",
+                  "want": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "got": [
+                    1,
+                    1,
+                    1
+                  ],
+                  "ok": true
+                }
+              ],
+              "verdict": "pass",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "textureCompressionASTC_LDR"
+            }
+          ]
+        },
+        "textureCompressionBC": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "claim.texture_compression_bc",
+              "advertised": false,
+              "extension_listed": true,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "textureCompressionBC"
+            },
+            {
+              "id": "bc.bc1_decode",
+              "advertised": false,
+              "extension_listed": true,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "textureCompressionBC"
+            },
+            {
+              "id": "bc.bc3_decode",
+              "advertised": false,
+              "extension_listed": true,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "textureCompressionBC"
+            }
+          ]
+        },
+        "occlusionQueryPrecise": {
+          "advertised": true,
+          "verdict": "pass",
+          "checks": [
+            {
+              "id": "core.query_copy_same_command_buffer",
+              "advertised": true,
+              "extension_listed": true,
+              "evidence": [
+                {
+                  "what": "rounds of 40 with a wrong sample count",
+                  "want": [
+                    0
+                  ],
+                  "got": [
+                    0
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "samples counted for the left half (a wrong round's value, when there was one)",
+                  "want": [
+                    2048
+                  ],
+                  "got": [
+                    2048
+                  ],
+                  "ok": true
+                }
+              ],
+              "verdict": "pass",
+              "feature": "VkPhysicalDeviceFeatures",
+              "bit": "occlusionQueryPrecise"
+            }
+          ]
+        },
+        "pipelineStatisticsQuery": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "vertexPipelineStoresAndAtomics": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "fragmentStoresAndAtomics": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderTessellationAndGeometryPointSize": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "shaderImageGatherExtended": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderStorageImageExtendedFormats": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderStorageImageMultisample": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "shaderStorageImageReadWithoutFormat": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderStorageImageWriteWithoutFormat": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderUniformBufferArrayDynamicIndexing": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderSampledImageArrayDynamicIndexing": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderStorageBufferArrayDynamicIndexing": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderStorageImageArrayDynamicIndexing": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderClipDistance": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderCullDistance": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "shaderFloat64": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "shaderInt64": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "shaderInt16": {
+          "advertised": true,
+          "verdict": "untested",
+          "checks": []
+        },
+        "shaderResourceResidency": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "shaderResourceMinLod": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseBinding": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseResidencyBuffer": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseResidencyImage2D": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseResidencyImage3D": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseResidency2Samples": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseResidency4Samples": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseResidency8Samples": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseResidency16Samples": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "sparseResidencyAliased": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "variableMultisampleRate": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "inheritedQueries": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "pass",
+      "untested_bits": 21
+    },
+    "VK_EXT_extended_dynamic_state": {
+      "extension_listed": false,
+      "bits": {
+        "extendedDynamicState": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds1.cull_mode",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state",
+              "bit": "extendedDynamicState"
+            },
+            {
+              "id": "eds1.front_face",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state",
+              "bit": "extendedDynamicState"
+            },
+            {
+              "id": "eds1.primitive_topology",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state",
+              "bit": "extendedDynamicState"
+            },
+            {
+              "id": "eds1.scissor_with_count",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state",
+              "bit": "extendedDynamicState"
+            },
+            {
+              "id": "eds1.depth_test_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state",
+              "bit": "extendedDynamicState"
+            },
+            {
+              "id": "eds1.depth_write_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state",
+              "bit": "extendedDynamicState"
+            },
+            {
+              "id": "eds1.depth_compare_op",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state",
+              "bit": "extendedDynamicState"
+            },
+            {
+              "id": "eds1.vertex_stride",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state",
+              "bit": "extendedDynamicState"
+            }
+          ]
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_extended_dynamic_state2": {
+      "extension_listed": false,
+      "bits": {
+        "extendedDynamicState2": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds2.rasterizer_discard_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state2",
+              "bit": "extendedDynamicState2"
+            },
+            {
+              "id": "eds2.depth_bias_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state2",
+              "bit": "extendedDynamicState2"
+            },
+            {
+              "id": "eds2.primitive_restart_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state2",
+              "bit": "extendedDynamicState2"
+            }
+          ]
+        },
+        "extendedDynamicState2LogicOp": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds2.logic_op",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state2",
+              "bit": "extendedDynamicState2LogicOp"
+            }
+          ]
+        },
+        "extendedDynamicState2PatchControlPoints": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_extended_dynamic_state3": {
+      "extension_listed": false,
+      "bits": {
+        "extendedDynamicState3TessellationDomainOrigin": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3DepthClampEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds3.depth_clamp_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state3",
+              "bit": "extendedDynamicState3DepthClampEnable"
+            }
+          ]
+        },
+        "extendedDynamicState3PolygonMode": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds3.polygon_mode",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state3",
+              "bit": "extendedDynamicState3PolygonMode"
+            }
+          ]
+        },
+        "extendedDynamicState3RasterizationSamples": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3SampleMask": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3AlphaToCoverageEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3AlphaToOneEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3LogicOpEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds3.logic_op_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state3",
+              "bit": "extendedDynamicState3LogicOpEnable"
+            }
+          ]
+        },
+        "extendedDynamicState3ColorBlendEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds3.color_blend_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state3",
+              "bit": "extendedDynamicState3ColorBlendEnable"
+            }
+          ]
+        },
+        "extendedDynamicState3ColorBlendEquation": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds3.color_blend_equation",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state3",
+              "bit": "extendedDynamicState3ColorBlendEquation"
+            }
+          ]
+        },
+        "extendedDynamicState3ColorWriteMask": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "eds3.color_write_mask",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_extended_dynamic_state3",
+              "bit": "extendedDynamicState3ColorWriteMask"
+            }
+          ]
+        },
+        "extendedDynamicState3RasterizationStream": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3ConservativeRasterizationMode": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3ExtraPrimitiveOverestimationSize": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3DepthClipEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3SampleLocationsEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3ColorBlendAdvanced": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3ProvokingVertexMode": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3LineRasterizationMode": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3LineStippleEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3DepthClipNegativeOneToOne": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3ViewportWScalingEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3ViewportSwizzle": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3CoverageToColorEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3CoverageToColorLocation": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3CoverageModulationMode": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3CoverageModulationTableEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3CoverageModulationTable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3CoverageReductionMode": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3RepresentativeFragmentTestEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "extendedDynamicState3ShadingRateImageEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_vertex_input_dynamic_state": {
+      "extension_listed": false,
+      "bits": {
+        "vertexInputDynamicState": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "vids.attribute_offset",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_vertex_input_dynamic_state",
+              "bit": "vertexInputDynamicState"
+            }
+          ]
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_custom_border_color": {
+      "extension_listed": false,
+      "bits": {
+        "customBorderColors": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "border.custom_color",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_custom_border_color",
+              "bit": "customBorderColors"
+            }
+          ]
+        },
+        "customBorderColorWithoutFormat": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_border_color_swizzle": {
+      "extension_listed": false,
+      "bits": {
+        "borderColorSwizzle": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "border.swizzle",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_border_color_swizzle",
+              "bit": "borderColorSwizzle"
+            }
+          ]
+        },
+        "borderColorSwizzleFromImage": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_depth_clip_control": {
+      "extension_listed": false,
+      "bits": {
+        "depthClipControl": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "depth.clip_control",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_depth_clip_control",
+              "bit": "depthClipControl"
+            }
+          ]
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_depth_bias_control": {
+      "extension_listed": false,
+      "bits": {
+        "depthBiasControl": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "leastRepresentableValueForceUnormRepresentation": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        },
+        "floatRepresentation": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "depth.bias_float",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_depth_bias_control",
+              "bit": "floatRepresentation"
+            }
+          ]
+        },
+        "depthBiasExact": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_transform_feedback": {
+      "extension_listed": false,
+      "bits": {
+        "transformFeedback": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "xfb.capture",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_transform_feedback",
+              "bit": "transformFeedback"
+            },
+            {
+              "id": "xfb.geometry_shader_capture",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_transform_feedback",
+              "bit": "transformFeedback"
+            }
+          ]
+        },
+        "geometryStreams": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_color_write_enable": {
+      "extension_listed": false,
+      "bits": {
+        "colorWriteEnable": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "cwe.color_write_enable",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_color_write_enable",
+              "bit": "colorWriteEnable"
+            }
+          ]
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_inline_uniform_block": {
+      "extension_listed": false,
+      "bits": {
+        "inlineUniformBlock": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "iub.inline_uniform_block",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_inline_uniform_block",
+              "bit": "inlineUniformBlock"
+            }
+          ]
+        },
+        "descriptorBindingInlineUniformBlockUpdateAfterBind": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_KHR_timeline_semaphore": {
+      "extension_listed": true,
+      "bits": {
+        "timelineSemaphore": {
+          "advertised": true,
+          "verdict": "pass",
+          "checks": [
+            {
+              "id": "timeline.semaphore",
+              "advertised": true,
+              "extension_listed": true,
+              "evidence": [
+                {
+                  "what": "counter after creation with initial value 5",
+                  "want": [
+                    5
+                  ],
+                  "got": [
+                    5
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "counter after a host signal to 9",
+                  "want": [
+                    9
+                  ],
+                  "got": [
+                    9
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "wait for 9 with no timeout: VK_SUCCESS (0)",
+                  "want": [
+                    0
+                  ],
+                  "got": [
+                    0
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "wait for 10 for one millisecond: VK_TIMEOUT (2)",
+                  "want": [
+                    2
+                  ],
+                  "got": [
+                    2
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "wait for 12 after a queue signal, five seconds: VK_SUCCESS (0)",
+                  "want": [
+                    0
+                  ],
+                  "got": [
+                    0
+                  ],
+                  "ok": true
+                },
+                {
+                  "what": "counter after the queue signal",
+                  "want": [
+                    12
+                  ],
+                  "got": [
+                    12
+                  ],
+                  "ok": true
+                }
+              ],
+              "verdict": "pass",
+              "feature": "VK_KHR_timeline_semaphore",
+              "bit": "timelineSemaphore"
+            }
+          ]
+        }
+      },
+      "verdict": "pass",
+      "untested_bits": 0
+    },
+    "VK_KHR_shader_atomic_int64": {
+      "extension_listed": false,
+      "bits": {
+        "shaderBufferInt64Atomics": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "atomic.int64_buffer",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_KHR_shader_atomic_int64",
+              "bit": "shaderBufferInt64Atomics"
+            }
+          ]
+        },
+        "shaderSharedInt64Atomics": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    },
+    "VK_EXT_robustness2": {
+      "extension_listed": false,
+      "bits": {
+        "robustBufferAccess2": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "robust.buffer_access2",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_robustness2",
+              "bit": "robustBufferAccess2"
+            },
+            {
+              "id": "robust.storage_buffer_access2",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_robustness2",
+              "bit": "robustBufferAccess2"
+            }
+          ]
+        },
+        "robustImageAccess2": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": [
+            {
+              "id": "robust.image_access2",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_robustness2",
+              "bit": "robustImageAccess2"
+            },
+            {
+              "id": "robust.image_access2_kinds",
+              "advertised": false,
+              "extension_listed": false,
+              "evidence": [],
+              "verdict": "unsupported",
+              "feature": "VK_EXT_robustness2",
+              "bit": "robustImageAccess2"
+            }
+          ]
+        },
+        "nullDescriptor": {
+          "advertised": false,
+          "verdict": "unsupported",
+          "checks": []
+        }
+      },
+      "verdict": "unsupported",
+      "untested_bits": 0
+    }
+  },
+  "valid": true,
+  "harness": [
+    {
+      "id": "harness.baseline_draw",
+      "evidence": [
+        {
+          "what": "drawn half",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    }
+  ],
+  "core": [
+    {
+      "id": "core.readback_same_command_buffer",
+      "evidence": [
+        {
+          "what": "drawn half",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "push.max_combined_image_samplers",
+      "evidence": [
+        {
+          "what": "combined image samplers pushed in one set (the driver's stated limit)",
+          "got": 32,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "drawn half: the pushed texture",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "core.resubmit_command_buffer",
+      "evidence": [
+        {
+          "what": "first submit: drawn half",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "second submit of the same command buffer: drawn half",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "second submit of the same command buffer: cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "core.compute_udiv",
+      "evidence": [
+        {
+          "what": "703787787 \/ 47721859",
+          "want": [
+            14
+          ],
+          "got": [
+            14
+          ],
+          "ok": true
+        },
+        {
+          "what": "703787787 % 47721859",
+          "want": [
+            35681761
+          ],
+          "got": [
+            35681761
+          ],
+          "ok": true
+        },
+        {
+          "what": "4294967295 \/ 2147483649",
+          "want": [
+            1
+          ],
+          "got": [
+            1
+          ],
+          "ok": true
+        },
+        {
+          "what": "4294967295 % 2147483649",
+          "want": [
+            2147483646
+          ],
+          "got": [
+            2147483646
+          ],
+          "ok": true
+        },
+        {
+          "what": "4294967295 \/ 3",
+          "want": [
+            1431655765
+          ],
+          "got": [
+            1431655765
+          ],
+          "ok": true
+        },
+        {
+          "what": "4294967295 % 3",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        },
+        {
+          "what": "4000000000 \/ 3",
+          "want": [
+            1333333333
+          ],
+          "got": [
+            1333333333
+          ],
+          "ok": true
+        },
+        {
+          "what": "4000000000 % 3",
+          "want": [
+            1
+          ],
+          "got": [
+            1
+          ],
+          "ok": true
+        },
+        {
+          "what": "2147483648 \/ 65537",
+          "want": [
+            32767
+          ],
+          "got": [
+            32767
+          ],
+          "ok": true
+        },
+        {
+          "what": "2147483648 % 65537",
+          "want": [
+            32769
+          ],
+          "got": [
+            32769
+          ],
+          "ok": true
+        },
+        {
+          "what": "2147483647 \/ 46341",
+          "want": [
+            46340
+          ],
+          "got": [
+            46340
+          ],
+          "ok": true
+        },
+        {
+          "what": "2147483647 % 46341",
+          "want": [
+            41707
+          ],
+          "got": [
+            41707
+          ],
+          "ok": true
+        },
+        {
+          "what": "1000000007 \/ 31607",
+          "want": [
+            31638
+          ],
+          "got": [
+            31638
+          ],
+          "ok": true
+        },
+        {
+          "what": "1000000007 % 31607",
+          "want": [
+            17741
+          ],
+          "got": [
+            17741
+          ],
+          "ok": true
+        },
+        {
+          "what": "16777217 \/ 4097",
+          "want": [
+            4095
+          ],
+          "got": [
+            4095
+          ],
+          "ok": true
+        },
+        {
+          "what": "16777217 % 4097",
+          "want": [
+            2
+          ],
+          "got": [
+            2
+          ],
+          "ok": true
+        },
+        {
+          "what": "16777216 \/ 4096",
+          "want": [
+            4096
+          ],
+          "got": [
+            4096
+          ],
+          "ok": true
+        },
+        {
+          "what": "16777216 % 4096",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        },
+        {
+          "what": "4294967295 \/ 4294967295",
+          "want": [
+            1
+          ],
+          "got": [
+            1
+          ],
+          "ok": true
+        },
+        {
+          "what": "4294967295 % 4294967295",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        },
+        {
+          "what": "3000000000 \/ 1500000001",
+          "want": [
+            1
+          ],
+          "got": [
+            1
+          ],
+          "ok": true
+        },
+        {
+          "what": "3000000000 % 1500000001",
+          "want": [
+            1499999999
+          ],
+          "got": [
+            1499999999
+          ],
+          "ok": true
+        },
+        {
+          "what": "123456789 \/ 10007",
+          "want": [
+            12337
+          ],
+          "got": [
+            12337
+          ],
+          "ok": true
+        },
+        {
+          "what": "123456789 % 10007",
+          "want": [
+            430
+          ],
+          "got": [
+            430
+          ],
+          "ok": true
+        },
+        {
+          "what": "4294967294 \/ 2",
+          "want": [
+            2147483647
+          ],
+          "got": [
+            2147483647
+          ],
+          "ok": true
+        },
+        {
+          "what": "4294967294 % 2",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        },
+        {
+          "what": "65536 \/ 65537",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        },
+        {
+          "what": "65536 % 65537",
+          "want": [
+            65536
+          ],
+          "got": [
+            65536
+          ],
+          "ok": true
+        },
+        {
+          "what": "99999999 \/ 4294967295",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        },
+        {
+          "what": "99999999 % 4294967295",
+          "want": [
+            99999999
+          ],
+          "got": [
+            99999999
+          ],
+          "ok": true
+        },
+        {
+          "what": "1 \/ 1",
+          "want": [
+            1
+          ],
+          "got": [
+            1
+          ],
+          "ok": true
+        },
+        {
+          "what": "1 % 1",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "core.texel_fetch_beside_ubo",
+      "evidence": [
+        {
+          "what": "left half: texel (1, 0)",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "right half: texel (0, 1)",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            255,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "push.max_uniform_buffers",
+      "evidence": [
+        {
+          "what": "uniform buffers pushed in one set (the driver's stated limit)",
+          "got": 32,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "drawn half: element 5 of the pushed buffer",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "limit.uniform_buffer_range",
+      "evidence": [
+        {
+          "what": "bytes in one uniform buffer binding (the driver's stated limit)",
+          "got": 65536,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "drawn half: element 127 of the block",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "limit.dynamic_uniform_buffers",
+      "evidence": [
+        {
+          "what": "dynamic uniform buffers in one set, bound with as many offsets (the driver's stated limit)",
+          "got": 16,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "drawn half: the block the dynamic offset selects",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "stress.multi_draw_indirect_large",
+      "evidence": [],
+      "verdict": "unsupported"
+    },
+    {
+      "id": "stress.compute_after_render",
+      "evidence": [
+        {
+          "what": "wrong answers in 3200 divisions over 200 rounds",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        },
+        {
+          "what": "the last render pass: drawn half",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "stress.submit_memory",
+      "evidence": [
+        {
+          "what": "KiB of memory gained over 4000 submits (limit 16384)",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "the last submit: drawn half",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "core.copy_wide_row_length",
+      "evidence": [
+        {
+          "what": "first copied row (the last green row)",
+          "x": 16,
+          "y": 0,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "second copied row, 4,210,688 bytes later (the first black row)",
+          "x": 16,
+          "y": 1,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "core.mediump_mul_extended",
+      "evidence": [
+        {
+          "what": "low half of 255 * 3",
+          "want": [
+            765
+          ],
+          "got": [
+            765
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 242 * 19",
+          "want": [
+            4598
+          ],
+          "got": [
+            4598
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 229 * 35",
+          "want": [
+            8015
+          ],
+          "got": [
+            8015
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 216 * 51",
+          "want": [
+            11016
+          ],
+          "got": [
+            11016
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 203 * 67",
+          "want": [
+            13601
+          ],
+          "got": [
+            13601
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 190 * 83",
+          "want": [
+            15770
+          ],
+          "got": [
+            15770
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 177 * 99",
+          "want": [
+            17523
+          ],
+          "got": [
+            17523
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 164 * 115",
+          "want": [
+            18860
+          ],
+          "got": [
+            18860
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 151 * 131",
+          "want": [
+            19781
+          ],
+          "got": [
+            19781
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 138 * 147",
+          "want": [
+            20286
+          ],
+          "got": [
+            20286
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 125 * 163",
+          "want": [
+            20375
+          ],
+          "got": [
+            20375
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 112 * 179",
+          "want": [
+            20048
+          ],
+          "got": [
+            20048
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 99 * 195",
+          "want": [
+            19305
+          ],
+          "got": [
+            19305
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 86 * 211",
+          "want": [
+            18146
+          ],
+          "got": [
+            18146
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 73 * 227",
+          "want": [
+            16571
+          ],
+          "got": [
+            16571
+          ],
+          "ok": true
+        },
+        {
+          "what": "low half of 60 * 243",
+          "want": [
+            14580
+          ],
+          "got": [
+            14580
+          ],
+          "ok": true
+        },
+        {
+          "what": "high half of the first product",
+          "want": [
+            0
+          ],
+          "got": [
+            0
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "core.msaa_resolve",
+      "note": "no four sample colour attachments",
+      "evidence": [],
+      "verdict": "unsupported"
+    },
+    {
+      "id": "limit.color_attachments",
+      "evidence": [
+        {
+          "what": "colour attachments in one render pass (the driver's stated limit)",
+          "got": 8,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "first attachment: drawn half",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "first attachment: cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "limit.vertex_input",
+      "evidence": [
+        {
+          "what": "vertex buffer bindings in one pipeline, bound in one call (the driver's stated limit)",
+          "got": 16,
+          "ok": true
+        },
+        {
+          "what": "vertex attributes in one pipeline (the driver's stated limit)",
+          "got": 16,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "drawn half",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "limit.push_constants_size",
+      "evidence": [
+        {
+          "what": "push constant bytes pushed in one call (the driver's stated limit)",
+          "got": 256,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "drawn half: the colour in the first 16 bytes",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "limit.per_stage_samplers",
+      "evidence": [
+        {
+          "what": "combined image samplers in one descriptor set, bound and drawn with (the driver's stated limit)",
+          "got": 128,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "drawn half: the texture in element 0",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "limit.bound_descriptor_sets",
+      "evidence": [
+        {
+          "what": "descriptor sets bound in one call (the driver's stated limit)",
+          "got": 7,
+          "ok": true
+        },
+        {
+          "what": "bytes changed in memory next to the driver's allocations",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "drawn half: the texture in set 0",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "stress.pipeline_cache_threads",
+      "evidence": [
+        {
+          "what": "every vkCreateGraphicsPipelines call returned VK_SUCCESS",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "pipelines asked for in 8 seconds, at least one from each thread",
+          "got": 1024,
+          "ok": true
+        },
+        {
+          "what": "pipelines built, the same number",
+          "got": 1024,
+          "ok": true
+        },
+        {
+          "what": "every save made while compiling returned VK_SUCCESS or VK_INCOMPLETE",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "saves made while compiling",
+          "got": 68,
+          "ok": true
+        },
+        {
+          "what": "bytes a save reported beyond the buffer size it was given",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "bytes a save wrote past the end of the buffer it was given",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "final save size in bytes holds a header",
+          "got": 849952,
+          "ok": true
+        },
+        {
+          "what": "header names this device",
+          "got": 32,
+          "ok": true
+        },
+        {
+          "what": "drawn half, after every pipeline drew it",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    },
+    {
+      "id": "stress.pipeline_threads_no_cache",
+      "evidence": [
+        {
+          "what": "every vkCreateGraphicsPipelines call returned VK_SUCCESS",
+          "got": 0,
+          "ok": true
+        },
+        {
+          "what": "pipelines asked for in 8 seconds, at least one from each thread",
+          "got": 1024,
+          "ok": true
+        },
+        {
+          "what": "pipelines built, the same number",
+          "got": 1024,
+          "ok": true
+        },
+        {
+          "what": "drawn half, after every pipeline drew it",
+          "x": 16,
+          "y": 32,
+          "want": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            255,
+            0,
+            255
+          ],
+          "ok": true
+        },
+        {
+          "what": "cleared half",
+          "x": 48,
+          "y": 32,
+          "want": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "got": [
+            0,
+            0,
+            0,
+            255
+          ],
+          "ok": true
+        }
+      ],
+      "verdict": "pass"
+    }
+  ],
+  "vulkan": {
+    "device_type": 1,
+    "limits": {
+      "maxImageDimension1D": 16384,
+      "maxImageDimension2D": 16384,
+      "maxImageDimension3D": 16384,
+      "maxImageDimensionCube": 16384,
+      "maxImageArrayLayers": 4096,
+      "maxTexelBufferElements": 268435456,
+      "maxUniformBufferRange": 65536,
+      "maxStorageBufferRange": 2147483648,
+      "maxPushConstantsSize": 256,
+      "maxMemoryAllocationCount": 16384,
+      "maxSamplerAllocationCount": 4000,
+      "bufferImageGranularity": 1,
+      "sparseAddressSpaceSize": 0,
+      "maxBoundDescriptorSets": 7,
+      "maxPerStageDescriptorSamplers": 128,
+      "maxPerStageDescriptorUniformBuffers": 223,
+      "maxPerStageDescriptorStorageBuffers": 64,
+      "maxPerStageDescriptorSampledImages": 208,
+      "maxPerStageDescriptorStorageImages": 32,
+      "maxPerStageDescriptorInputAttachments": 9,
+      "maxPerStageResources": 664,
+      "maxDescriptorSetSamplers": 65535,
+      "maxDescriptorSetUniformBuffers": 223,
+      "maxDescriptorSetUniformBuffersDynamic": 16,
+      "maxDescriptorSetStorageBuffers": 4096,
+      "maxDescriptorSetStorageBuffersDynamic": 8,
+      "maxDescriptorSetSampledImages": 65535,
+      "maxDescriptorSetStorageImages": 256,
+      "maxDescriptorSetInputAttachments": 9,
+      "maxVertexInputAttributes": 16,
+      "maxVertexInputBindings": 16,
+      "maxVertexInputAttributeOffset": 4294967295,
+      "maxVertexInputBindingStride": 65535,
+      "maxVertexOutputComponents": 128,
+      "maxTessellationGenerationLevel": 0,
+      "maxTessellationPatchSize": 0,
+      "maxTessellationControlPerVertexInputComponents": 0,
+      "maxTessellationControlPerVertexOutputComponents": 0,
+      "maxTessellationControlPerPatchOutputComponents": 0,
+      "maxTessellationControlTotalOutputComponents": 0,
+      "maxTessellationEvaluationInputComponents": 0,
+      "maxTessellationEvaluationOutputComponents": 0,
+      "maxGeometryShaderInvocations": 0,
+      "maxGeometryInputComponents": 0,
+      "maxGeometryOutputComponents": 0,
+      "maxGeometryOutputVertices": 0,
+      "maxGeometryTotalOutputComponents": 0,
+      "maxFragmentInputComponents": 128,
+      "maxFragmentOutputAttachments": 8,
+      "maxFragmentDualSrcAttachments": 1,
+      "maxFragmentCombinedOutputResources": 4360,
+      "maxComputeSharedMemorySize": 32768,
+      "maxComputeWorkGroupCount": [
+        65535,
+        65535,
+        65535
+      ],
+      "maxComputeWorkGroupInvocations": 384,
+      "maxComputeWorkGroupSize": [
+        384,
+        384,
+        384
+      ],
+      "subPixelPrecisionBits": 8,
+      "subTexelPrecisionBits": 8,
+      "mipmapPrecisionBits": 8,
+      "maxDrawIndexedIndexValue": 4294967295,
+      "maxDrawIndirectCount": 1,
+      "maxSamplerLodBias": 126,
+      "maxSamplerAnisotropy": 16,
+      "maxViewports": 1,
+      "maxViewportDimensions": [
+        16384,
+        16384
+      ],
+      "viewportBoundsRange": [
+        -32768,
+        32767
+      ],
+      "viewportSubPixelBits": 0,
+      "minMemoryMapAlignment": 64,
+      "minTexelBufferOffsetAlignment": 64,
+      "minUniformBufferOffsetAlignment": 16,
+      "minStorageBufferOffsetAlignment": 64,
+      "minTexelOffset": -8,
+      "maxTexelOffset": 7,
+      "minTexelGatherOffset": -8,
+      "maxTexelGatherOffset": 7,
+      "minInterpolationOffset": -0.5,
+      "maxInterpolationOffset": 0.5,
+      "subPixelInterpolationOffsetBits": 4,
+      "maxFramebufferWidth": 16384,
+      "maxFramebufferHeight": 16384,
+      "maxFramebufferLayers": 256,
+      "framebufferColorSampleCounts": 1,
+      "framebufferDepthSampleCounts": 1,
+      "framebufferStencilSampleCounts": 1,
+      "framebufferNoAttachmentsSampleCounts": 1,
+      "maxColorAttachments": 8,
+      "sampledImageColorSampleCounts": 1,
+      "sampledImageIntegerSampleCounts": 1,
+      "sampledImageDepthSampleCounts": 1,
+      "sampledImageStencilSampleCounts": 1,
+      "storageImageSampleCounts": 1,
+      "maxSampleMaskWords": 1,
+      "timestampComputeAndGraphics": 1,
+      "timestampPeriod": 76.9230804,
+      "maxClipDistances": 8,
+      "maxCullDistances": 0,
+      "maxCombinedClipAndCullDistances": 8,
+      "discreteQueuePriorities": 2,
+      "pointSizeRange": [
+        1,
+        1024
+      ],
+      "lineWidthRange": [
+        1,
+        1
+      ],
+      "pointSizeGranularity": 0.0625,
+      "lineWidthGranularity": 0,
+      "strictLines": 1,
+      "standardSampleLocations": 1,
+      "optimalBufferCopyOffsetAlignment": 64,
+      "optimalBufferCopyRowPitchAlignment": 64,
+      "nonCoherentAtomSize": 64
+    },
+    "sparse": {
+      "residencyStandard2DBlockShape": 0,
+      "residencyStandard2DMultisampleBlockShape": 0,
+      "residencyStandard3DBlockShape": 0,
+      "residencyAlignedMipSize": 0,
+      "residencyNonResidentStrict": 0
+    },
+    "memory_heaps": [
+      {
+        "size": 7848341504,
+        "flags": 1
+      }
+    ],
+    "memory_types": [
+      {
+        "heap": 0,
+        "flags": 7
+      },
+      {
+        "heap": 0,
+        "flags": 11
+      },
+      {
+        "heap": 0,
+        "flags": 17
+      }
+    ],
+    "queue_families": [
+      {
+        "flags": 7,
+        "count": 1,
+        "timestamp_bits": 64,
+        "min_transfer": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "formats": {
+      "2": [
+        56705,
+        56705,
+        64
+      ],
+      "3": [
+        56705,
+        56705,
+        64
+      ],
+      "4": [
+        56707,
+        56707,
+        88
+      ],
+      "5": [
+        56707,
+        56707,
+        88
+      ],
+      "8": [
+        56707,
+        56707,
+        88
+      ],
+      "9": [
+        56707,
+        56707,
+        88
+      ],
+      "10": [
+        56707,
+        56707,
+        88
+      ],
+      "11": [
+        0,
+        0,
+        64
+      ],
+      "12": [
+        0,
+        0,
+        64
+      ],
+      "13": [
+        52355,
+        52355,
+        88
+      ],
+      "14": [
+        52355,
+        52355,
+        88
+      ],
+      "15": [
+        56707,
+        56707,
+        24
+      ],
+      "16": [
+        56707,
+        56707,
+        88
+      ],
+      "17": [
+        56707,
+        56707,
+        88
+      ],
+      "18": [
+        0,
+        0,
+        64
+      ],
+      "19": [
+        0,
+        0,
+        64
+      ],
+      "20": [
+        52355,
+        52355,
+        88
+      ],
+      "21": [
+        52355,
+        52355,
+        88
+      ],
+      "22": [
+        56707,
+        56707,
+        24
+      ],
+      "23": [
+        56707,
+        56707,
+        88
+      ],
+      "24": [
+        56707,
+        56707,
+        88
+      ],
+      "25": [
+        0,
+        0,
+        64
+      ],
+      "26": [
+        0,
+        0,
+        64
+      ],
+      "27": [
+        0,
+        0,
+        64
+      ],
+      "28": [
+        0,
+        0,
+        64
+      ],
+      "29": [
+        56707,
+        56707,
+        24
+      ],
+      "30": [
+        56707,
+        56707,
+        88
+      ],
+      "32": [
+        0,
+        0,
+        64
+      ],
+      "33": [
+        0,
+        0,
+        64
+      ],
+      "34": [
+        0,
+        0,
+        64
+      ],
+      "35": [
+        0,
+        0,
+        64
+      ],
+      "36": [
+        56707,
+        56707,
+        24
+      ],
+      "37": [
+        56707,
+        56707,
+        88
+      ],
+      "38": [
+        56707,
+        56707,
+        88
+      ],
+      "39": [
+        0,
+        0,
+        64
+      ],
+      "40": [
+        0,
+        0,
+        64
+      ],
+      "41": [
+        52355,
+        52355,
+        88
+      ],
+      "42": [
+        52355,
+        52355,
+        88
+      ],
+      "43": [
+        56707,
+        56707,
+        24
+      ],
+      "44": [
+        56707,
+        56707,
+        88
+      ],
+      "45": [
+        56707,
+        56707,
+        88
+      ],
+      "46": [
+        0,
+        0,
+        64
+      ],
+      "47": [
+        0,
+        0,
+        64
+      ],
+      "48": [
+        52355,
+        52355,
+        88
+      ],
+      "49": [
+        52355,
+        52355,
+        88
+      ],
+      "50": [
+        56707,
+        56707,
+        24
+      ],
+      "51": [
+        56707,
+        56707,
+        88
+      ],
+      "52": [
+        56707,
+        56707,
+        88
+      ],
+      "53": [
+        0,
+        0,
+        64
+      ],
+      "54": [
+        0,
+        0,
+        64
+      ],
+      "55": [
+        52355,
+        52355,
+        88
+      ],
+      "56": [
+        52355,
+        52355,
+        88
+      ],
+      "57": [
+        56707,
+        56707,
+        24
+      ],
+      "58": [
+        56707,
+        56707,
+        88
+      ],
+      "59": [
+        0,
+        0,
+        64
+      ],
+      "60": [
+        0,
+        0,
+        64
+      ],
+      "61": [
+        0,
+        0,
+        64
+      ],
+      "62": [
+        52355,
+        52355,
+        88
+      ],
+      "63": [
+        52353,
+        52353,
+        64
+      ],
+      "64": [
+        56707,
+        56707,
+        88
+      ],
+      "65": [
+        0,
+        0,
+        64
+      ],
+      "66": [
+        0,
+        0,
+        64
+      ],
+      "67": [
+        0,
+        0,
+        64
+      ],
+      "68": [
+        52355,
+        52355,
+        88
+      ],
+      "69": [
+        52353,
+        52353,
+        64
+      ],
+      "70": [
+        56707,
+        56707,
+        88
+      ],
+      "71": [
+        56707,
+        56707,
+        88
+      ],
+      "72": [
+        0,
+        0,
+        64
+      ],
+      "73": [
+        0,
+        0,
+        64
+      ],
+      "74": [
+        52355,
+        52355,
+        88
+      ],
+      "75": [
+        52355,
+        52355,
+        88
+      ],
+      "76": [
+        56707,
+        56707,
+        88
+      ],
+      "77": [
+        56707,
+        56707,
+        88
+      ],
+      "78": [
+        56707,
+        56707,
+        88
+      ],
+      "79": [
+        0,
+        0,
+        64
+      ],
+      "80": [
+        0,
+        0,
+        64
+      ],
+      "81": [
+        52355,
+        52355,
+        88
+      ],
+      "82": [
+        52355,
+        52355,
+        88
+      ],
+      "83": [
+        56707,
+        56707,
+        88
+      ],
+      "84": [
+        0,
+        0,
+        64
+      ],
+      "85": [
+        0,
+        0,
+        64
+      ],
+      "86": [
+        0,
+        0,
+        64
+      ],
+      "87": [
+        0,
+        0,
+        64
+      ],
+      "88": [
+        0,
+        0,
+        64
+      ],
+      "89": [
+        0,
+        0,
+        64
+      ],
+      "90": [
+        0,
+        0,
+        64
+      ],
+      "91": [
+        56707,
+        56707,
+        88
+      ],
+      "92": [
+        56707,
+        56707,
+        88
+      ],
+      "93": [
+        0,
+        0,
+        64
+      ],
+      "94": [
+        0,
+        0,
+        64
+      ],
+      "95": [
+        52355,
+        52355,
+        88
+      ],
+      "96": [
+        52355,
+        52355,
+        88
+      ],
+      "97": [
+        56707,
+        56707,
+        88
+      ],
+      "98": [
+        52359,
+        52359,
+        120
+      ],
+      "99": [
+        52359,
+        52359,
+        120
+      ],
+      "100": [
+        56707,
+        56707,
+        88
+      ],
+      "101": [
+        52355,
+        52355,
+        88
+      ],
+      "102": [
+        52355,
+        52355,
+        88
+      ],
+      "103": [
+        56707,
+        56707,
+        88
+      ],
+      "104": [
+        52355,
+        52355,
+        88
+      ],
+      "105": [
+        52355,
+        52355,
+        88
+      ],
+      "106": [
+        56707,
+        56707,
+        88
+      ],
+      "107": [
+        52355,
+        52355,
+        88
+      ],
+      "108": [
+        52355,
+        52355,
+        88
+      ],
+      "109": [
+        56707,
+        56707,
+        88
+      ],
+      "122": [
+        56707,
+        56707,
+        88
+      ],
+      "123": [
+        56707,
+        56707,
+        88
+      ],
+      "124": [
+        56833,
+        56833,
+        0
+      ],
+      "125": [
+        56833,
+        56833,
+        0
+      ],
+      "126": [
+        56833,
+        56833,
+        0
+      ],
+      "127": [
+        52737,
+        52737,
+        0
+      ],
+      "129": [
+        0,
+        56833,
+        0
+      ],
+      "130": [
+        0,
+        56833,
+        0
+      ],
+      "147": [
+        54273,
+        54273,
+        0
+      ],
+      "148": [
+        54273,
+        54273,
+        0
+      ],
+      "149": [
+        54273,
+        54273,
+        0
+      ],
+      "150": [
+        54273,
+        54273,
+        0
+      ],
+      "151": [
+        54273,
+        54273,
+        0
+      ],
+      "152": [
+        54273,
+        54273,
+        0
+      ],
+      "153": [
+        54273,
+        54273,
+        0
+      ],
+      "154": [
+        54273,
+        54273,
+        0
+      ],
+      "155": [
+        54273,
+        54273,
+        0
+      ],
+      "156": [
+        54273,
+        54273,
+        0
+      ],
+      "157": [
+        54273,
+        54273,
+        0
+      ],
+      "158": [
+        54273,
+        54273,
+        0
+      ],
+      "159": [
+        54273,
+        54273,
+        0
+      ],
+      "160": [
+        54273,
+        54273,
+        0
+      ],
+      "161": [
+        54273,
+        54273,
+        0
+      ],
+      "162": [
+        54273,
+        54273,
+        0
+      ],
+      "163": [
+        54273,
+        54273,
+        0
+      ],
+      "164": [
+        54273,
+        54273,
+        0
+      ],
+      "165": [
+        54273,
+        54273,
+        0
+      ],
+      "166": [
+        54273,
+        54273,
+        0
+      ],
+      "167": [
+        54273,
+        54273,
+        0
+      ],
+      "168": [
+        54273,
+        54273,
+        0
+      ],
+      "169": [
+        54273,
+        54273,
+        0
+      ],
+      "170": [
+        54273,
+        54273,
+        0
+      ],
+      "171": [
+        54273,
+        54273,
+        0
+      ],
+      "172": [
+        54273,
+        54273,
+        0
+      ],
+      "173": [
+        54273,
+        54273,
+        0
+      ],
+      "174": [
+        54273,
+        54273,
+        0
+      ],
+      "175": [
+        54273,
+        54273,
+        0
+      ],
+      "176": [
+        54273,
+        54273,
+        0
+      ],
+      "177": [
+        54273,
+        54273,
+        0
+      ],
+      "178": [
+        54273,
+        54273,
+        0
+      ],
+      "179": [
+        54273,
+        54273,
+        0
+      ],
+      "180": [
+        54273,
+        54273,
+        0
+      ],
+      "181": [
+        54273,
+        54273,
+        0
+      ],
+      "182": [
+        54273,
+        54273,
+        0
+      ],
+      "183": [
+        54273,
+        54273,
+        0
+      ],
+      "184": [
+        54273,
+        54273,
+        0
+      ],
+      "1000156007": [
+        56707,
+        56707,
+        88
+      ],
+      "1000156008": [
+        56707,
+        56707,
+        88
+      ]
+    }
+  }
+}
